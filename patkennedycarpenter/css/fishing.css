@@ -1,0 +1,120 @@
+html,
+body,
+main {
+  font-family: arial;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#fishing-header {
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  z-index: 1;
+}
+#fishing-header #nav-toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+#fishing-header #nav-toggle .glyphicon {
+  font-size: 2em;
+}
+#fishing-header #title {
+  font-size: 2em;
+}
+#fishing-header #sub-title {
+  font-size: 1em;
+  color: gray;
+  margin-top: -6px;
+}
+main {
+  display: flex;
+  padding-top: 60px;
+}
+#sidebar {
+  flex: 0 0 250px;
+  height: 100%;
+  overflow-y: auto;
+}
+.boundary-item {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  padding: 10px 5px;
+  position: relative;
+  font-weight: bold;
+}
+.boundary-item .glyphicon-chevron-right {
+  position: absolute;
+  top: 14px;
+  right: 6px;
+}
+.boundary-item .boundary-more-link {
+  display: none;
+  text-decoration: none;
+}
+.boundary-item .boundary-more-link .glyphicon {
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+.boundary-item .boundary-notes {
+  margin-top: 5px;
+  font-weight: normal;
+}
+.boundary-item.expanded .boundary-notes {
+  display: block;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+.popup-name {
+  font-weight: bold;
+}
+#exportButton {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+#exportPanel {
+  display: none;
+  font-size: 12px;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  height: 500px;
+  width: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+/* iPads (landscape) ----------- */
+@media only screen and (max-width: 768px) {
+  #fishing-header {
+    padding-top: 8px;
+  }
+  #fishing-header #nav-toggle {
+    top: 20px;
+  }
+  #fishing-header #nav-toggle .glyphicon {
+    font-size: 1.5em;
+  }
+  #fishing-header #title {
+    font-size: 1.5em;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+/* Smartphones (portrait) ----------- */

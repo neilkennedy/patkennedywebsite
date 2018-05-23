@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fishing boundaries Kilkenny. Kilkenny Anglers Association" />
+    <meta name="author" content="Neil Kennedy" />
+    <title>Kilkenny Anglers Association Fishing Boundaries</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="thirdparty/leaflet.draw-0.2.4/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/fishing.css" />
+  </head>
+
+  <body>
+    <header id="fishing-header">
+      <div id="nav-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+      <div id="title">Kilkenny Anglers Association</div>
+      <div id="sub-title">Fishing Boundaries</div>
+    </header>
+    
+    <main>
+      <nav id="sidebar"></nav>
+      <div id="map"></div>
+    </main>
+
+    <button id="exportButton">Export</button>
+    <div id="exportPanel"></div>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="thirdparty/leaflet.draw-0.2.4/leaflet.draw.js"></script>
+    <script src="js/fishing.js"></script>
+    <script src="js/fishingJson.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        new Fishing(window.fishingJson);
+      });
+    </script>
+    
+  </body>
+</html>

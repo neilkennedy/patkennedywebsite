@@ -1,0 +1,27 @@
+{
+  "name": "patkennedycarpenter",
+  "version": "2.0.0",
+  "authors": [
+    "Neil Kennedy <neil.p.kennedy@hotmail.com>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "All Rights Reserved",
+  "homepage": "http://www.patkennedycarpenter.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "blueimp-bootstrap-image-gallery": "blueimp/Bootstrap-Image-Gallery#~3.1.1",
+    "blueimp-gallery": "blueimp/Gallery#~2.15.1",
+    "swiper-scrollbar": "nolimits4web/Swiper-Scrollbar#~2.4.1",
+    "swiper": "nolimits4web/Swiper#~2.7.0"
+  }
+}
