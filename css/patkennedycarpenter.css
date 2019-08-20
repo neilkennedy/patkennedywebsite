@@ -3,34 +3,64 @@ body {
   font-size: 18px;
   padding-bottom: 40px;
 }
+
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }
+@media screen and (min-width: 769px) {
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
 .hero-unit {
   background: url(../images/heroImage.png) no-repeat scroll center center;
   background-size: cover;
   color: White;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
   position: relative;
   border-radius: 0;
-  padding-top: 20px;
 }
+
 .hero-unit h1 {
-  font-size: 5em;
-  bottom: 40px;
-  left: 0;
-  position: absolute;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
 }
+
 .hero-unit h3 {
-  bottom: 0px;
-  left: 0;
-  position: absolute;
+  margin: 0;
+  padding: 0;
 }
+
+@media screen and (min-width: 362px) {
+  .hero-unit h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-unit {
+    height: 250px;
+  }
+  .hero-unit h1 {
+    font-size: 5em;
+  }
+
+  .hero-unit h1 span {
+    display: block;
+  }
+}
+
 .text-section {
   padding: 5px 20px;
   margin-top: 20px;
 }
+
 .homepage-gallery {
   background: url("../images/home2.png") no-repeat scroll center center transparent;
   background-size: contain;
@@ -39,6 +69,7 @@ h2 {
   margin-top: 20px;
   position: relative;
 }
+
 .homepage-gallery .cover {
   position: absolute;
   top: 0;
@@ -47,34 +78,41 @@ h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .homepage-gallery h2 {
-  font-size: 4em;
   padding-top: 20px;
 }
+
 .homepage-gallery h4 {
   padding-bottom: 60px;
 }
+
 .homepage-gallery img {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   height: 150px;
   width: 150px;
 }
+
 .homepage-gallery .swiper-container {
   height: 150px;
 }
+
 .homepage-gallery .swiper-slide {
   height: 150px;
 }
+
 .homepage-gallery .swiper-scrollbar {
   height: 12px;
   padding: 2px 0;
   background-color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid grey;
 }
+
 .homepage-gallery .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 .homepage-gallery .slider-button {
   cursor: pointer;
   position: absolute;
@@ -83,18 +121,22 @@ h2 {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+
 .homepage-gallery .slider-button.next {
   bottom: 12px;
   right: 0;
 }
+
 .homepage-gallery .slider-button.previous {
   bottom: 12px;
   left: 0;
 }
+
 .homepage-gallery .slider-button i {
   color: white;
   margin: 65px 0 0 7px;
 }
+
 .skills-image {
   background: none no-repeat scroll 0 0 transparent;
   background-size: cover;
@@ -104,24 +146,31 @@ h2 {
   width: 100px;
   margin-top: 20px;
 }
+
 .skills-image.flooring {
   background-image: url('../images/flooring.jpg');
 }
+
 .skills-image.decking {
   background-image: url('../images/decking.jpg');
 }
+
 .skills-image.attic {
   background-image: url('../images/attic.jpg');
 }
+
 .skills-image.second-fixing {
   background-image: url('../images/second-fixing.jpg');
 }
+
 .skills-image.other {
   background-image: url('../images/other.jpg');
 }
+
 .skills-text {
   margin-left: 120px;
 }
+
 footer {
   padding-left: 20px;
 }
